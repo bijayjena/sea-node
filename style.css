@@ -1,0 +1,43 @@
+.bg-gradient-primary {
+    background: rgb(0,212,255);
+    background: -moz-linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(58,51,171,0.9192810913427871) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(58,51,171,0.9192810913427871) 100%);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(58,51,171,0.9192810913427871) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#3a33ab",GradientType=1); 
+}  
+
+.navbar toggler{
+    border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;   
+    border: 0;
+}
+
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+
+.h-custom {
+height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+#logButton{
+    padding-left: 25px;
+    padding-right: 25px;
+}

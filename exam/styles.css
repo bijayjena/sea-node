@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-gradient-primary {
+    background: rgb(0,212,255);
+    background: -moz-linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(58,51,171,0.9192810913427871) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(58,51,171,0.9192810913427871) 100%);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(58,51,171,0.9192810913427871) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#3a33ab",GradientType=1); 
+}  
+
+.spacing{
+    height: 200px;
+}
+.card{
+    height: 250px;
+    align-items: center;
+    background: rgb(4,1,47);
+    background: linear-gradient(54deg, rgba(4,1,47,1) 0%, rgba(74,19,119,1) 100%);
+    border-radius: 16px;
+}
+.card:hover{
+    color: yellowgreen;
+}
+.space
+{
+    height: 100px;
+}
+.col-sm-4 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.spacing2{
+    height:150px;
+}
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr {
+    color: #ffffff;
+    text-align: left;
+}
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+.table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid rgba(0,212,255);
+}
+.table tbody :hover{
+    color: #009879;
+}
+.btn-group{
+    padding: 120px;
+}
