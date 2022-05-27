@@ -11,7 +11,10 @@ Group Members : <br>
 npm run dev
 </pre></code>
 
-### Front End
+### Frontend
 All the Code is in backend/public <br>
 index.html will call windows.onload() to auth/login.html <br>
+
+### Backend
 Only the initial template of backend is done <br>
+Connected with local mogoose <br>
