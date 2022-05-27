@@ -7,7 +7,6 @@ Group Members : <br>
 <a href="https://www.github.com/sujanpatro/">Sujan Kumar Patro</a>
 <br>
 ## To run the project
-<pre><code>
-cd backend
+<pre><code>cd backend
 npm run dev
 </pre></code>
