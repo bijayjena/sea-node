@@ -6,7 +6,12 @@ Group Members : <br>
 <a href="https://www.github.com/ranger633/">Vivek Kumar Singh</a> <br>
 <a href="https://www.github.com/sujanpatro/">Sujan Kumar Patro</a>
 <br>
-### To run the project
+### To Run the Project
 <pre><code>cd backend
 npm run dev
 </pre></code>
+
+### Front End
+All the Code is in backend/public
+index.html will call windows.onload() to auth/login.html
+Only the initial template of backend is done
