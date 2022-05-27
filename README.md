@@ -12,6 +12,6 @@ npm run dev
 </pre></code>
 
 ### Front End
-All the Code is in backend/public
-index.html will call windows.onload() to auth/login.html
-Only the initial template of backend is done
+All the Code is in backend/public <br>
+index.html will call windows.onload() to auth/login.html <br>
+Only the initial template of backend is done <br>
