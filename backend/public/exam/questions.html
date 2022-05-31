@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questions</title>
+</head>
+<body>
+    <div class="spacing"></div>
+    <div class="spacing"></div>
+    <div class="box">
+        <div class="up">
+            <div class="title">Examination</div>
+            <div class="timer">Time Left: <span class="timer"><span id="counter"></span></span> </div>
+        </div>
+        <div class="questionbox">
+            What is the full form of CSS?
+        </div>
+        <div class="options">
+            <span onclick="c2g()">Cascading Style Sheets</span>
+            <span onclick="c2r()">Cascad Style Sheets</span>
+            <span onclick="c2r2()">Cascading Styles Sheet</span>
+            <span onclick="c2r3()">Cascadest Style Sheets</span>
+        </div>
+        <div class="footer">
+            <button class="btn btn-primary btn-lg" onclick="loadQuest()">Next</button>
+            <!-- <a class="btn btn-lg btn-primary" >Next</a> -->
+        </div>
+    </div>
+    <script>
+        
+        function loadQuest(){
+            var qbox = document.getElementsByClassName("questionbox");
+            qbox[0].innerHTML = "What is the full form of HTML?";
+            document.getElementsByClassName("options")[0].innerHTML = `
+            <span onclick="c2g()">HyperText Markup Language</span>
+            <span onclick="c2r()">Hood Text Madeup Lang</span>
+            <span onclick="c2r2()">Hola Text Model Language</span>
+            <span onclick="c2r3()">Hopper Text Markup Language</span>
+            `;
+        }
+        
+        function countdown() {
+            var seconds = 59;
+            function tick() {
+                var counter = document.getElementById("counter");
+                seconds--;
+                counter.innerHTML =
+                "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+                if (seconds > 0) {
+                    setTimeout(tick, 1000);
+                } else {
+                    document.getElementById("verifiBtn").innerHTML = `
+                    <div class="Btn" id="ResendBtn">
+                        <button type="submit">Resend</button>
+                    </div>
+                    `;
+                    document.getElementById("counter").innerHTML = "";
+                }
+            }
+            tick();
+        }
+        countdown();
+        
+        function c2g(){
+            var ans = document.getElementsByClassName("options")[0].children[0];
+            ans.style.backgroundColor = "green";
+        }
+        function c2r(){
+            var ans = document.getElementsByClassName("options")[0].children[1];
+            ans.style.backgroundColor = "red";
+        }
+        function c2r2(){
+            var ans = document.getElementsByClassName("options")[0].children[2];
+            ans.style.backgroundColor = "red";
+        }
+        function c2r3(){
+            var ans = document.getElementsByClassName("options")[0].children[3];
+            ans.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

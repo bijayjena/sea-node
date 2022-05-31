@@ -48,20 +48,26 @@
             <input class="btn" type="file" name="newItem" id="newItem">
             <button class="btn btn-primary" onclick="uploadFile()">Upload</button>
         </div>
-        <div class="container text-center">
-            <div class="file mt-3">
-                File 1
-                <button class="btn btn-secondary">Download</button>
-            </div>
-            <div class="file mt-3">
-                File 2
-                <button class="btn btn-secondary">Download</button>
-            </div>
-        </div>
     </main>
     <script>
         function uploadFile(){
-            file = document.getElementsByName("newItem");
+            var text = document.getElementsByName("newItem").value;
+            var post = document.createElement('div');
+            // navlinks[0].classList.add("active");
+            post.classList.add("container");
+            post.classList.add("text-center");
+            post.classList.add("uploads");
+            post.innerHTML=`
+                <div class="file mt-3"> ` + text + `
+                    <button class="btn btn-secondary">Download</button>
+                </div>
+                <div class="file mt-3">
+                    File 2
+                    <button class="btn btn-secondary">Download</button>
+                </div>`;
+            console.log(post);
+            document.getElementById("newItem").value = "";
+            document.getElementsByClassName("uploads")[0].appendChild(post);
         }
     </script>
 </body>

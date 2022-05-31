@@ -22,13 +22,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item px-3 h5">
-                            <a class="nav-link" href="../exam/exam.html">Exam</a>
-                        </li>
-                        <li class="nav-item px-3 h5">
-                            <a class="nav-link" href="../forum/forum.html">Forum</a>
+                            <a class="nav-link" href="/forum">Forum</a>
                         </li>
                         <li class="nav-item px-3 h5 active" aria-current="page">
-                            <a class="nav-link" href="">Repository</a>
+                            <a class="nav-link" href="/repo">Repository</a>
                         </li>
                         <li class="nav-item dropdown h5 px-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,8 +34,8 @@
                                 </svg>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">My Wall</a></li>
-                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                <li><a class="dropdown-item" href="/dashboard">My Wall</a></li>
+                                <li><a class="dropdown-item" href="/login">Log Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -50,7 +47,7 @@
         <div class="col-3">
             <img src="../img/user.svg" alt="User Pic" width="100%">
             <div class="mt-3">
-                <h5>User Name</h5>
+                <h5>student@a.c</h5>
             </div>
         </div>
         <div class="col-9">
@@ -76,7 +73,7 @@
                             <td>English Test</td>
                             <td>15/04/2022</td>
                             <td>
-                                <a href="./quiz">
+                                <a href="../exam/quiz.html">
                                     <button type="submit" class="btn btn-success">Attempt</button>
                                 </a>
                             </td>
@@ -85,7 +82,7 @@
                             <td>Aptitude</td>
                             <td>18/04/2022</td>
                             <td>
-                                <a href="./quiz">
+                                <a href="../exam/quiz.html">
                                     <button type="submit" class="btn btn-success">Attempt</button>
                                 </a>
                             </td>
@@ -136,7 +133,6 @@
                 navlinks[0].classList.add("active");
                 results[0].style.visibility = "hidden";
                 upcoming[0].style.visibility = "visible";
-                // upcoming[0].replaceWith(results[0]);
             }
         }
         function switchActiveNavlink2() {
@@ -148,7 +144,6 @@
                 navlinks[1].classList.add("active");
                 results[0].style.visibility = "visible";
                 upcoming[0].style.visibility = "hidden";
-                // upcoming[0].replaceWith(results[0]);
             }
         }
     </script>
